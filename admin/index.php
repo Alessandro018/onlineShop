@@ -64,7 +64,6 @@ if(!isset($_SESSION["USER"])){
 					<input type="date" class="form-control" name="" id="">
 					<input type="date" class="form-control" name="" id="">
 					<input type="date" class="form-control" name="" id="">
-					<i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i>
 				</form>
 			</div>
 			<footer class="footer">

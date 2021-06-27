@@ -125,88 +125,8 @@ div.main {
 	max-height: 490px;
 	text-align: center;
 }
-div.main form.cad-cli {
-	border-radius: 4px;
-	background-color: #EFF2F3;
-	width: 90%;
-	height: 100%;
-	margin: 0 auto;
-}
-div.main form.update-pw {
-	padding-top: 40px;
-	margin-top: 40px;
-	border-radius: 4px;
-	background-color: #EFF2F3;
-	width: 90%;
-	height: 70%;
-}
-div.list-users {
-	margin: 30px auto 0;
-	width: 60%;
-	border-radius: 4px;
-	background-color: #EFF2F3;
-	text-align: center;
-	height: 480px;
-	max-height: 480px;
-	overflow-y: scroll;
-}
-div.list-users button {
-	margin: 15px;
-	float: right;
-}
-div.list-users table {
-	margin: 30px auto;
-	width: 100%;
-	padding-top: 15px;
-	border-top: #babaca solid 1px;
-}
-td {
-	max-width: 100px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
-div.row a {
-	float: right;
-	right: 0;
-	padding: 10px 30px;
-	background-color: #239FD5;
-	margin: 20px;
-	color: white;
-	border-radius: 19px;
-	cursor: pointer;
-	text-decoration: none;
-}
-div.row a:hover {
-	background-color: rgb(105, 171, 233);
-}
-div.list-users div.row label {
-	float: left;
-	left: 0;
-	font-size: 29px;
-	padding: 23px;
-}
-td {
-	padding: 10px;
-}
 form  label {
 	display: inline-block;
-}
-div.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-.col-25 {
-	float: left;
-	width: 25%;
-	margin-top: 14px;
-}  
-.col-75 {
-	float: left;
-	width: 75%;
-	margin-top: 6px;
 }
  /* form  input {
 	width: 75%;
