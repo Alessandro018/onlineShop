@@ -8,9 +8,9 @@
         private $connection;
 
         public function __construct() {
-            $this->host = "";
-            $this->user = "";
-            $this->password = "";
+            $this->host = "localhost";
+            $this->user = "student";
+            $this->password = "123456";
             $this->database = "onlineStore";
             
             $this->connection = new PDO("mysql: host=$this->host; dbname=$this->database", $this->user, $this->password);
@@ -22,7 +22,8 @@
             return $data;
         }
         public function rowCount($prepare, $execute=[]) {
-            $data = $this->query($prepare, $execute)->rowCount();
+            // $data = $this->query($prepare, $execute)->rowCount();
+            $data = $this->connection->rowCount();
             return $data;
         }
         public function fetchAll($prepare, $execute) {

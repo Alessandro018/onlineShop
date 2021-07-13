@@ -1,4 +1,14 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php?url=$1 [NC,L]
+# RewriteCond %{QUERY_STRING} ==""
+# RewriteCond %{QUERY_STRING} ^url=home$ [NC]
+# RewriteRule ^index.php(.*)$ http://onlinestore.com/%1? [R=301,L]
+# RewriteRule ^/?$ app/php/routes/routes.php?url=home [NC,L]
+# RewriteRule ^(.+)\/?$ $1 [R,L]
+# RewriteRule ^products\/([0-9]+)\/details$ app/php/routes/routes.php?product=$1 [NC,L]
+# RewriteBase /
+# RewriteRule ^(.+)\/?$ $1 [R,L]
+RewriteRule ^(.*)$ app/php/routes/routes.php?url=$1 [NC,L]
+#RewriteRule ^products/([A-Za-z0-9]+)/(summer|winter|fall|spring)$ app/php/views/products/details.php?product=$1&page=$2 [NC,L]
+# RewriteRule ^products/([0-9]+)/details$ app/php/views/products/details.php?product=$1 [NC,L]

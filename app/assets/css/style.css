@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root {
+    --primary-color: #00c2cb;
+    --secundary-color: #5f5f66;
+    --light-color: #ffff;
+    --purple: #5e17cb;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.custom-navbar {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.show-offers{
+	width: 100%;
+	height: 90vh;
+    background-image: url("../img/online-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 55px;
+}
+.offer-separation {
+    height: 8px;
+    position: relative;
+    width: 100%;
+    background-color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer-separation span{
+    background-color: var(--purple);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    transform: rotate(90deg);
+    color: var(--light-color);
+}
+
+.show-products {
+    width: 90%;
+    margin-top: 50px;
+    padding: 20px;
+    /* background: var(--primary-color); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.product {
+    width: 270px;
+    height: 370px;
+    display: flex;
+    margin-top: 35px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.20);
+    background-color: #f4f7f7;
+    flex-direction: column;
+    text-decoration: none;
+}
+.product .photo {
+    width: 100%;
+}
+.product .photo img {
+    height: 180px;
+    width: 100%;
+}
+.product .price {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 10px 0 0 25px;
+}
+.product .description {
+    width: 100%;
+    padding: 10px 25px;
+    background-color: white;
+    color: var(--secundary-color);
+}
+.product:hover {
+    cursor: pointer;
+    border: solid 1px #babaca;
+}
+.offer-title {
+    color: var(--primary-color);
+}
+.offer-description {
+    margin-top: 3rem;
+    width: 50%;
+    color: var(--secundary-color);
+}
+/* .show-offers img {
+    width: 100%;
+    ba
+} */
